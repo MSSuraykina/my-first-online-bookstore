@@ -1,12 +1,18 @@
 package com.mywebproject.bookstore.bo;
 
-import javax.xml.crypto.Data;
 
+import lombok.Data;
+import java.sql.Time;
+
+/**
+ * Used work with a bonus card
+ */
+@Data
 public class BonusCard {
     private User user;
     private int id;
-    private int balаnce; //балланс
+    private int balance; //балланс
     private String description; //описание
-    private Data bonusesBurnTime; //время сгораия бонусов
+    private Time bonusesBurnTime; //время сгораия бонусов
 
 }
